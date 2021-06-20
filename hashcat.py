@@ -13,7 +13,7 @@ archivo = input('Ingrese (o arrastre) la direccion del archivo a hashear: ')
 dicc1 = input('Ingrese la direccion del primer diccionario: ')
 dicc2 = input('Ingrese la direccion del segundo diccionario: ')
 
-os.system(f'cmd /k "hashcat.exe -m {hashMode} -a 0 {archivo} {dicc1} {dicc2} --show"')
+os.system(f'cmd /k "hashcat.exe -m {hashMode} -a 0 {archivo} {dicc1} {dicc2} --force"')
 
 archivo1 = open(r'C:\Users\Vicente\Desktop\hashcat\archivo1.txt', 'r').readlines()
 bcrypted1 = open('bcrypted1.txt', 'w')
